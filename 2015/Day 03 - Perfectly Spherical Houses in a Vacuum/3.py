@@ -23,7 +23,7 @@ roboHouse = (0,0)
 i = 0
 
 for direction in input:
-    if i%2 == 0:
+    if i % 2 == 0:
         humanHouse = tuple(map(lambda x, y: x + y, humanHouse, vector(direction)))
         visitedHouses.add(humanHouse)
     else:
