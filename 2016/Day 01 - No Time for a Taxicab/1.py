@@ -34,5 +34,5 @@ for direction in directions:
 taxicab = location[0] + location[1]
 firstRepeat = visitedTwice[0]
 taxicabRepeat = firstRepeat[0] + firstRepeat[1]
-print("The directions lead to a location",taxicab,"blocks away")
-print("The first location visited twice is",taxicabRepeat,"blocks away")
+print('The directions lead to a location',taxicab,'blocks away')
+print('The first location visited twice is',taxicabRepeat,'blocks away')

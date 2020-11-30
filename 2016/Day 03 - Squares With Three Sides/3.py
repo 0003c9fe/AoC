@@ -10,7 +10,7 @@ for triangle in input:
     if valid(sides[0], sides[1], sides[2]):
         possible += 1
 
-print("Considering rows,",possible,"of the listed triangles are possible")
+print('Considering rows,',possible,'of the listed triangles are possible')
 
 column1 = []
 column2 = []
@@ -30,4 +30,4 @@ for column in columns:
             possible += 1
         i += 3
 
-print("Considering columns",possible,"of the listed triangles are possible")
+print('Considering columns',possible,'of the listed triangles are possible')

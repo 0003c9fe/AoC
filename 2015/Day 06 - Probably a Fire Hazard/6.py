@@ -31,7 +31,7 @@ for instruction in filteredInput:
                 lightGrid[x][y] = (lightGrid[x][y] + 1) % 2
 
 lightsOn = np.sum(lightGrid, dtype=int)
-print("After following the old instructions",lightsOn,"lights are lit")
+print('After following the old instructions',lightsOn,'lights are lit')
 
 lightGrid = np.zeros((1000,1000), dtype=int)
 for instruction in filteredInput:
@@ -55,4 +55,4 @@ for instruction in filteredInput:
                 lightGrid[x][y] += 2
 
 brightness = np.sum(lightGrid, dtype=int)
-print("After following the new instructions the total brightness is",brightness)
+print('After following the new instructions the total brightness is',brightness)

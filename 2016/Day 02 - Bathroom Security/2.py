@@ -28,7 +28,7 @@ for instruction in input:
             y = 2
     code += keypadA[y][x]
 
-print("The first bathroom code is",code)
+print('The first bathroom code is',code)
 
 keypadB = np.array([['#','#','1','#','#'],['#','2','3','4','#'],['5','6','7','8','9'],['#','A','B','C','#'],['#','#','D','#','#']])
 x, y = 2, 2
@@ -61,4 +61,4 @@ for instruction in input:
             x, y = oldX, oldY
     code += keypadB[y][x]
 
-print("The second bathroom code is",code)
+print('The second bathroom code is',code)

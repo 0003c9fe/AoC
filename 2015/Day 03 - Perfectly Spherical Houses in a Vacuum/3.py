@@ -15,7 +15,7 @@ for direction in input:
     house = tuple(map(lambda x, y: x + y, house, vector(direction)))
     visitedHouses.add(house)
 
-print(len(visitedHouses),"houses receive at least one present with just Santa")
+print(len(visitedHouses),'houses receive at least one present with just Santa')
 
 visitedHouses = {(0,0)}
 humanHouse = (0,0)
@@ -31,4 +31,4 @@ for direction in input:
         visitedHouses.add(roboHouse)
     i += 1
 
-print(len(visitedHouses),"houses receive at least one present with Santa and Robo-Santa")
+print(len(visitedHouses),'houses receive at least one present with Santa and Robo-Santa')

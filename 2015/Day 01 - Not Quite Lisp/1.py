@@ -13,5 +13,5 @@ for instruction in input:
         floor -= 1
     list.append(floor)
 
-print("Santa stops at floor",floor)
-print("Santa first reaches the pasement on instruction",list.index(-1)+1)
+print('Santa stops at floor',floor)
+print('Santa first reaches the pasement on instruction',list.index(-1)+1)

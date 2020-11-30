@@ -16,5 +16,5 @@ for present in input:
     paperAmount += dimensionsToPaper(dimensions)
     ribbonAmount += dimensionsToRibbon(dimensions)
 
-print("The elves need to order",paperAmount,"square feet of wrapping paper")
-print("The elves need to order",ribbonAmount,"feet of ribbon")
+print('The elves need to order',paperAmount,'square feet of wrapping paper')
+print('The elves need to order',ribbonAmount,'feet of ribbon')

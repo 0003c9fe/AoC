@@ -11,10 +11,10 @@ message = ''
 for i in range(len(letters)):
     message += Counter(letters[i]).most_common()[0][0]
 
-print("The original error-corrected message is",message)
+print('The original error-corrected message is',message)
 
 message = ''
 for i in range(len(letters)):
     message += Counter(letters[i]).most_common()[-1][0]
 
-print("The modified error-corrected message is",message)
+print('The modified error-corrected message is',message)

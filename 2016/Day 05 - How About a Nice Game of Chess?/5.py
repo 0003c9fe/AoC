@@ -9,7 +9,7 @@ while len(password) < 8:
         password += hl.md5(hashInput.encode()).hexdigest()[5]
     i += 1
 
-print("The first password is",password)
+print('The first password is',password)
 
 password = ['_','_','_','_','_','_','_','_']
 print()

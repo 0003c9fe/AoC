@@ -21,7 +21,7 @@ for room in input:
         idSum += sectorID
         realRooms.append((' '.join(room.split('-')[0:-1]),sectorID))
 
-print("The sum of the sector IDs of the real rooms is",idSum)
+print('The sum of the sector IDs of the real rooms is',idSum)
 
 realNames = []
 offset = ord('a')
@@ -44,4 +44,4 @@ while not found:
     found = realNames[i][0] == 'northpole object storage'
 
 poleID = realNames[i][1]
-print("The sector ID of the room where North Pole objects are stored is",poleID)
+print('The sector ID of the room where North Pole objects are stored is',poleID)
