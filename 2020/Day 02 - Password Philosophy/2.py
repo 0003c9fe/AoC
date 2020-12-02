@@ -1,4 +1,3 @@
-import re
 with open('input.txt') as file:
     input = [line.rstrip().replace(':','').replace('-',' ').split() for line in file]
 
@@ -17,7 +16,7 @@ for password in input:
 print('There are',validCount,'valid passwords of the first kind')
 
 def valid2(first,second,letter,string):
-    return (string[int(first)-1] == letter and string[int(second)-1] != letter) or (string[int(first)-1] != letter and string[int(second)-1] == letter)
+    return (string[int(first)-1] == letter) != (string[int(second)-1] == letter)
 
 validCount = 0
 for password in input:
