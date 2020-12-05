@@ -6,9 +6,7 @@ def seatID(boardingPass):
     for f, r in d.items():
         boardingPass = boardingPass.replace(f, r)
 
-    row = int(boardingPass[:7],2)
-    col = int(boardingPass[7:],2)
-    seatID = row * 8 + col
+    seatID = int(boardingPass,2)
     return seatID
 
 seatIDs = set()
