@@ -1,10 +1,8 @@
 with open('input.txt') as file:
     input = [line.rstrip() for line in file]
 
-def seatID(boardingPass):
-    d = boardingPass.maketrans('FBLR','0101')
-    seatID = int(boardingPass.translate(d),2)
-    return seatID
+def seatID(p):
+    return int(p.translate(p.maketrans('FBLR','0101')),2)
 
 seatIDs = set()
 for boardingPass in input:
