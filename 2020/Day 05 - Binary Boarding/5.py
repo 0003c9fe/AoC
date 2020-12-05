@@ -2,11 +2,8 @@ with open('input.txt') as file:
     input = [line.rstrip() for line in file]
 
 def seatID(boardingPass):
-    d = { 'F': '0', 'B': '1', 'L': '0', 'R': '1' }
-    for f, r in d.items():
-        boardingPass = boardingPass.replace(f, r)
-
-    seatID = int(boardingPass,2)
+    d = boardingPass.maketrans('FBLR','0101')
+    seatID = int(boardingPass.translate(d),2)
     return seatID
 
 seatIDs = set()
